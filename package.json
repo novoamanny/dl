@@ -1,0 +1,24 @@
+{
+  "name": "devlink",
+  "version": "1.0.0",
+  "description": "DevLink App Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "git": "git add . && git commit -m'0.0.1' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novoamanny/DL.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/novoamanny/DL/issues"
+  },
+  "homepage": "https://github.com/novoamanny/DL#readme"
+}
