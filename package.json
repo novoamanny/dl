@@ -9,7 +9,7 @@
     "server": "nodemon server.js",
     "client-install": "npm install --prefix client",
     "client": "npm start --prefix client",
-    "git": "git add . && git commit -m'0.0.1' && git push"
+    "git": "git add . && git commit -m'0.0.2' && git push"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "express": "^4.17.1",
     "express-validator": "^6.8.0",
     "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.8",
     "nodemon": "^2.0.6",
     "passport": "^0.4.1",
     "request": "^2.88.2"
