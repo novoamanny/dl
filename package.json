@@ -9,7 +9,7 @@
     "server": "nodemon server.js",
     "client-install": "npm install --prefix client",
     "client": "npm start --prefix client",
-    "git": "git add . && git commit -m'0.0.2' && git push"
+    "git": "git add . && git commit -m'0.0.3' && git push"
   },
   "repository": {
     "type": "git",

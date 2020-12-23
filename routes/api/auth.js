@@ -40,11 +40,12 @@ router.post(
       if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
       }
-  
-      const { Email, Password } = req.body;
+      const Email = req.body.Email.toLowerCase();
+      const { Password } = req.body;
   
       try {
-        let user = await USER.findOne({ email });
+        let user = await USER.findOne({ Email });
+        
   
         if (!user) {
           return res
@@ -53,7 +54,7 @@ router.post(
         }
   
         const isMatch = await bcrypt.compare(Password, user.Password);
-  
+        
         if (!isMatch) {
           return res
             .status(400)

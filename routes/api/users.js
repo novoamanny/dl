@@ -23,8 +23,9 @@ router.post('/enroll',
         if(!errors.isEmpty()){
             return res.status(400).json({errors: errors.array()})
         }
-
-        const {First_Name, Last_Name, Email, Password} = req.body;
+        const Email = req.body.Email.toLowerCase();
+        const {First_Name, Last_Name, Password} = req.body;
+        
 
         try{
             let user = await USER.findOne({Email});
